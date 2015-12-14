@@ -1,0 +1,75 @@
+ЗАВДАННЯ №1
+
+- git branch "architecture"
+- git checkout architecture
+- mkdir -p assets/uploads
+- touch assets/uploads/index.html
+- git commit -m "add new files structure"
+- touch assets/all.js
+- touch assets/css.js
+- git commit -m "added new files"
+- git push origin architecture
+- echo "index.html" > .gitignore
+- git checkout master
+- git merge architecture
+- git branch --delete architecture
+
+ЗАВДАННЯ №2
+
+- git brange new branch
+- touch index.html
+- git add .
+- git commit -m "add index.txt"
+- echo "first row"> index/txt
+- git add --all
+- git commit -m "add more text in index.txt"
+- git rebase new
+- echo "second row" >> index.txt
+- git add --all
+- git commit -m "added more text"
+- git checkout master
+- git merge new
+- git branche --delete new
+
+ЗАВДАННЯ №3
+
+- touch index.html
+- git add .
+- git commit -m "add index.txt"
+- echo "first row"> index/txt
+- git add --all
+- git commit -m "add more text in index.txt"
+- git tag V0.1
+- git push origin V0.1
+
+ЗАВДАННЯ №4
+- git submodule add github.com/lanzeron/6HTML-Advansed
+- git commit -m "new submodule"
+- git push origin master
+
+ЗАВДАННЯ №5
+
+- git branch gh-pages
+- echo "some text" > index.html
+- git add --all
+- git commit -m "new file"
+- git push origin gh-pages
+- echo "second row" > index.html
+- git add --all
+- git commit -m "added more text in file"
+- git push origin gh-pages
+
+
+ЗАВДАННЯ №6
+- echo "<div class="footer"> contact as </div>" > file.txt
+- git add --all
+- git commit -m "some text in file.txt"
+- git checkout branch
+- echo "<div class="footer"> our email dfdf@gmail.com </div>" > file.txt
+- git add --all
+- git commit -m "it is a new row in file"
+- git merge master
+CONFLICT
+- git merge --abort 
+FIXING 
+- git merge master
